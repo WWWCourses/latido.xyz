@@ -1,201 +1,187 @@
-        /*fonts*/
-        @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic);
-        /*~~~~~~~~~~ minimal reset  ~~~~~~~~~~*/
-        html, body, article,h1, h2, h3, h4, h5, h6{
-            margin: 0; padding: 0;
-            overflow: auto;
-            font-size: inherit;
-        }
-        ol, li{
-            margin: 0; padding: 0;
-            list-style-type: none;
-        }
-        /*~~~~~~~~~~ layout  ~~~~~~~~~~*/
-        /* small */
-        @media only screen and (min-width: 50px){
-            body {
-                width:  98%;
-                margin: 0 auto;
-                padding: 0 2%;
-            }
-        }
-        /* vary small */
-        @media only screen and (min-width: 480px){
-            body {
-                width:  96%;
-                margin: 0 auto;
-                padding: 0 2%;
-            }
-        }
-        /* large */
-        @media only screen and (min-width: 800px)  {
-            body {
-                width:  80%;
-                margin: 0 auto;
-                padding: 0 2%;
-            }
-        }
-        /* very large */
-        @media only screen and (min-width: 1200px)  {
-            body {
-                width:  50%;
-                margin: 0 auto;
-                padding: 0 2%;
-            }
-        }
-        html{
-            /*background-color: #cdcdcd;*/
-        }
-        body{
-            line-height: 1.2em;
-            color: #4d4b4d;
-            background-color: #fff;
-            font-family: 'Titillium Web', sans-serif;
-            font-weight: normal;
-            font-style: normal;
-            /*font-size: .9em;*/
-        }
-        .diag{
-            width: 200px;
-            position: absolute;
-            text-align: center;
-            line-height: 2em;
-            top: 70px;
-            left: -25px;
-            transform: rotate(315deg);
-            -webkit-transform: rotate(315deg);
-            -ms-transform: rotate(315deg);
-            -moz-transform: rotate(315deg);
-            -o-transform: rotate(315deg);
-            box-shadow: 4px 4px 10px rgba(0,0,0,0.8);
-        }
-        header{
-            position: relative;
-            width: 100%;
-            height: 6em;
-            margin: 1em 0 2em 0;
-            line-height: 1.5em;
-            text-align: center;
-            font-size: 1.5em;
-            background-color: #454547;
-            color: #999;
-            box-shadow: 4px 4px 10px rgba(0,0,0,0.8);
-            overflow: hidden;
-        }
-        header>h2{
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: .4em 0 0 .9em;
-            overflow: hidden;
-            color: #FFBA7E;
-        }
-        header>h3{
-            position: absolute;
-            top: 2em;
-            left: 25%;
-            width: 100%;
-            text-align: left;
-            color: #CDCDCD;
-            overflow: hidden;
-        }
-        header>h4{
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            margin: 0 .9em .4em 0;
-            overflow: hidden;
-            color: #71BA8E;
-        }
-        header>h2>span{
-            /*font-size: 1.2em;
-            line-height: 1.5em;*/
-            font-weight: bold;
-            overflow: hidden;
-        }
-        footer{
-            width: 100%;
-            display: inline-block;
-            margin: 5em 0 0 0;
-            height: 5em;
-            vertical-align: middle;
-            text-align: center;
-            border-top: 1px solid #AAA;
-            color: #999;
-        }
-        article{
-            line-height: 1.5em;
-        }
-        article>h4{
-            font-size: 1.8em;
-            line-height: 1.5em;
-            /*font-style: italic;*/
-            color: #888;
-            margin: 1.5em .2em .3em 0;
-        }
-        .iep_syllabus_title{
-            /*font-size: 1.2em;*/
-        }
-        .iep_syllabus_title:hover{
-            /*font-size: 1.4em;*/
-            /*cursor: pointer;*/
-        }
-        .iep_syllabus_title>.show_hide_buttons{
-            float: right;
-            padding: 0;
-            font-size: .6em;
-            color: #999;
-            font-weight: normal;
-            vertical-align: middle;
-        }
-        .iep_syllabus_title>.show_hide_buttons>.btn_show{
-            margin: 0 1em 0 0;
-            color: #71BA8E;
-        }
-        .iep_syllabus_title>.show_hide_buttons>.btn_hide{
-            margin: 0 0em 0 0;
-            color: #FFBA7E;
-        }
-        .iep_syllabus_title>.show_hide_buttons>a:hover{
-            /*font-size:.9em;*/
-            cursor: pointer;
-        }
-        .iep_syllabus .total_hours{
-            float: right;
-            color: #BA7274 ;
-        }
-        .iep_course_project{
-                    margin: 1em 0 0 0;
-        }
-        /*background*/
-        .background{
-            background: rgba(237,237,237,1);
-            background: -moz-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,237,237,1)), color-stop(53%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
-            background: -webkit-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-            background: -o-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-            background: -ms-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-            background: linear-gradient(to right, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
-        }
-        /*~~~~~~~~~~ links  ~~~~~~~~~~*/
-        .iep_syllabus a{
-                    text-decoration: none;
-                    color: #145878;
-        }
-        .iep_syllabus a:hover{
-                    text-decoration: underline;
-                    color: #239DD5;
-        }
-        p{
-            margin: .5em 0;
-        }
+/*~~~~~~~~~~ fonts  ~~~~~~~~~~*/
+    @import url(https://fonts.googleapis.com/   css?family=Titillium+Web:400,400italic);
+/*~~~~~~~~~~ background  ~~~~~~~~~~*/
+    @import url("backgrounds.css");
 
-        /*~~~~~~~~~~ The list  ~~~~~~~~~~*/
-        .iep_syllabus_themes>li{
-                    margin: 1em 0 0 0;
+/*~~~~~~~~~~ minimal reset  ~~~~~~~~~~*/
+    html, body, article,h1, h2, h3, h4, h5, h6{
+        margin: 0; padding: 0;
+        overflow: auto;
+        font-size: inherit;
+    }
+    ol, li{
+        margin: 0; padding: 0;
+        list-style-type: none;
+    }
+/*~~~~~~~~~~ layout  ~~~~~~~~~~*/
+    /* small */
+    @media only screen and (min-width: 50px){
+        body {
+            width:  98%;
+            margin: 0 auto;
+            padding: 0 2%;
         }
-        .iep_syllabus_themes>li>h3{
+    }
+    /* vary small */
+    @media only screen and (min-width: 480px){
+        body {
+            width:  96%;
+            margin: 0 auto;
+            padding: 0 2%;
+        }
+    }
+    /* large */
+    @media only screen and (min-width: 800px)  {
+        body {
+            width:  80%;
+            margin: 0 auto;
+            padding: 0 2%;
+        }
+    }
+    /* very large */
+    @media only screen and (min-width: 1200px)  {
+        body {
+            width:  50%;
+            margin: 0 auto;
+            padding: 0 2%;
+        }
+    }
+/*~~~~~~~~~~ basic elements  ~~~~~~~~~~*/
+    html{
+        /*background-color: #cdcdcd;*/
+    }
+    body{
+        line-height: 1.2em;
+        color: #4d4b4d;
+        background-color: #fff;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        /*font-size: .9em;*/
+    }
+    p{
+        margin: 0.5em;
+    }
+/*~~~~~~~~~~ header  ~~~~~~~~~~*/
+    header{
+        position: relative;
+        width: 100%;
+        height: 6em;
+        margin: 1em 0 2em 0;
+        line-height: 1.5em;
+        text-align: center;
+        font-size: 1.5em;
+        background-color: #454547;
+        color: #999;
+        box-shadow: 4px 4px 10px rgba(0,0,0,0.8);
+        overflow: hidden;
+    }
+    header>h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: .4em 0 0 .9em;
+        overflow: hidden;
+        color: #FFBA7E;
+    }
+    header>h3{
+        position: absolute;
+        top: 2em;
+        left: 25%;
+        width: 100%;
+        text-align: left;
+        color: #CDCDCD;
+        overflow: hidden;
+    }
+    header>h4{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0 .9em .4em 0;
+        overflow: hidden;
+        color: #71BA8E;
+    }
+    header>h2>span{
+        /*font-size: 1.2em;
+        line-height: 1.5em;*/
+        font-weight: bold;
+        overflow: hidden;
+    }
+/*~~~~~~~~~~ footer  ~~~~~~~~~~*/
+    footer{
+        width: 100%;
+        display: inline-block;
+        margin: 5em 0 0 0;
+        height: 5em;
+        vertical-align: middle;
+        text-align: center;
+        border-top: 1px solid #AAA;
+        color: #999;
+    }
+    article{
+        line-height: 1.5em;
+    }
+    article>h4{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        /*font-style: italic;*/
+        color: #888;
+        margin: 1.5em .2em .3em 0;
+    }
+/*~~~~~~~~~~ common classes ~~~~~~~~~~*/
+.hidden{
+    /*display: none;*/
+}
+/*~~~~~~~~~~ iep_syllabus elements  ~~~~~~~~~~*/
+
+    .iep_syllabus_title>.show_hide_buttons{
+        float: right;
+        padding: 0;
+        font-size: .6em;
+        color: #999;
+        font-weight: normal;
+        vertical-align: middle;
+    }
+    .iep_syllabus_title>.show_hide_buttons>.btn_show{
+        margin: 0 1em 0 0;
+        color: #71BA8E;
+    }
+    .iep_syllabus_title>.show_hide_buttons>.btn_hide{
+        margin: 0 0em 0 0;
+        color: #FFBA7E;
+    }
+    .iep_syllabus_title>.show_hide_buttons>a:hover{
+        /*font-size:.9em;*/
+        cursor: pointer;
+    }
+/*~~~~~~~~~~ iep_syllabus_themes elements  ~~~~~~~~~~*/
+    .iep_syllabus_themes h3 i{
+        margin-right: 1em;
+        color: gray;
+        font-size: .8em;
+    }
+    .iep_syllabus .total_hours{
+        float: right;
+        color: #BA7274 ;
+    }
+    .iep_course_project{
+                margin: 1em 0 0 0;
+    }
+
+/*~~~~~~~~~~ links  ~~~~~~~~~~*/
+    .iep_syllabus a{
+                text-decoration: none;
+                color: #145878;
+    }
+    .iep_syllabus a:hover{
+                text-decoration: underline;
+                color: #239DD5;
+    }
+/*~~~~~~~~~~ The list  ~~~~~~~~~~*/
+    .iep_syllabus_themes>li{
+                margin: 1em 0 0 0;
+    }
+    .iep_syllabus_themes>li>h3{
             display: inline-block;
             width: 100%;
             font-size: 1.1em;
@@ -204,15 +190,15 @@
             line-height: 1.5em;
             letter-spacing: .1em;
             border-bottom: .1em solid #EADAAD;
-        }
-        .iep_syllabus_themes>li>h3:hover{
+    }
+    .iep_syllabus_themes>li>h3:hover{
             cursor: pointer;
-        }
-        .iep_syllabus_themes .label{
+    }
+    .iep_syllabus_themes .label{
             vertical-align: middle;
             display: inline-block;
-        }
-        .iep_syllabus_themes .arrow_down::after{
+    }
+    .iep_syllabus_themes .arrow_down::after{
             /*content: "\f078";*/
             content: "\f0d7";
             margin-left: .5em;
@@ -220,8 +206,8 @@
             text-decoration: none;
             font-size: .9em;
             color: #FFBA7E;
-        }
-        .iep_syllabus_themes .arrow_up::after{
+    }
+    .iep_syllabus_themes .arrow_up::after{
             /*content:  "\f077";*/
             content: "\f0d8";
             margin-left: .5em;
@@ -229,11 +215,11 @@
             font-size: .9em;
             text-decoration: none;
             color: #71BA8E;
-        }
-        .iep_syllabus_themes>li>h3:hover>.label{
+    }
+    .iep_syllabus_themes>li>h3:hover>.label{
             /*font-size: 1.1em;*/
-        }
-        .iep_syllabus_themes .arrow{
+    }
+    .iep_syllabus_themes .arrow{
             vertical-align: bottom;
             font-size: .8em;
             color: #FF7C00;
@@ -241,26 +227,25 @@
             font-family: FontAwesome;
             text-decoration: none;
             /*color: #437F73;*/
-        }
-        .iep_syllabus_themes>li>h3:hover>.arrow{
+    }
+    .iep_syllabus_themes>li>h3:hover>.arrow{
             font-size: 1.2em;
-        }
-        .iep_syllabus_themes .hours{
+    }
+    .iep_syllabus_themes .hours{
             float: right;
             padding: 0 0 0 1em;
             font-weight: normal;
             color: #999;
-        }
-        .iep_syllabus_themes .hours::after{
+    }
+    .iep_syllabus_themes .hours::after{
             content: ' h.';
-        }
-        .iep_syllabus_sub_themes>li{
+    }
+    .iep_syllabus_sub_themes>li{
             line-height: 2em;
-        }
-
-        /*~~~~~~~~~~ accents  ~~~~~~~~~~*/
-        .iep_syllabus_sub_themes .kw{
-                    font-size: 1em;
-                    font-style: normal;
-                    color: #333;
-        }
+    }
+/*~~~~~~~~~~ accents  ~~~~~~~~~~*/
+    .iep_syllabus_sub_themes .kw{
+        font-size: 1em;
+        font-style: normal;
+        color: #333;
+    }

@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../outfit/css/Schedule.css">
 </head>
-<body onload="calcTotalHours();showAllNodes( document.getElementsByClassName('iep_syllabus_sub_themes') );" class="background">
+<body onload="calcTotalHours();showAllNodes( document.getElementsByClassName('iep_syllabus_sub_themes') );" class="background_gradient_left_right">
 <header>
     <h2>Модул <span>1</span></h2>
     <h3>WebDesign/Front-end Dev Course</h3>
@@ -23,8 +23,8 @@
 <article class="iep_course_about">
     <h4>About</h4>
     <p>The first part of this module reveals the basic Web concepts with simple explanations and practical examples. You will pass through it by creating from scratch a Web site project - from domain and host purchasing, settings and configuration. You will upload your first Web documents to the server.</p>
-    <p>The second part will make you familiar with the state-of-the-art Web Dev Tools. Most of his/her time a pro Web Developer sparse around research, setting-up and configuring the life-saving, cutting-age tools. They save time and gives power.
-    <p></p>
+    <p>The second part will make you familiar with the state-of-the-art Web Dev Tools. Most of his/her time a pro Web Developer sparse around research, setting-up and configuring the life-saving, cutting-age tools. They save time and gives power.</p>
+    <p>
     After finishing successfully the module you'll feel more comfortable into the Web realm. You will be familiar with the right development tools - your first, but solid step on the the Fron-End Development road.
     </p>
 </article>
@@ -34,7 +34,8 @@
     <a class="btn_hide"  onclick="hideAllNodes( document.getElementsByClassName('iep_syllabus_sub_themes'))">Hide Subtopics</a> )</span>
     </h4>
     <ol class="iep_syllabus_themes">
-        <li><h3 title="Hide Subtopics" onclick="showHideNode(this.nextElementSibling);"><span class="label arrow_down">How a Web Site works?</span><span class="hours">2</span></h3>
+        <li><h3 title="Hide Subtopics" onclick="showHideNode(this.nextElementSibling);"><a class="hidden" href="../themes/slides/how_a_web_site_works.html" title="slides"><i class="fa fa-file-powerpoint-o"></i></a>
+        <span class="label arrow_down">How a Web Site works?</span><span class="hours">2</span></h3>
             <ol class="iep_syllabus_sub_themes">
                 <li>You don't have to be scared from Web servers, Web clients, URLs, IP address, HTTP and FTP.</li>
                 <li>And you should have a basic understanding of Front-end and Back-end development processes.</li>
@@ -42,7 +43,9 @@
                 <li>RDBMS/SQl or NoSQL?</li>
             </ol>
         </li>
-        <li><h3 title="Hide Subtopics" onclick="showHideNode(this.nextElementSibling);"><span class="label arrow_down">Manage and administer a WebSite - the vital intro.</span><span class="hours">2</span></h3>
+        <li><h3 title="Hide Subtopics" onclick="showHideNode(this.nextElementSibling);">
+            <a href="../themes/slides/manage_and_administer_a_website.html"><i class="fa fa-file-powerpoint-o"></i></a>
+            <span class="label arrow_down">Manage and administer a WebSite - the vital intro.</span><span class="hours">2</span></h3>
             <ol class="iep_syllabus_sub_themes">
                 <li>What is a domain - and how it impacts the SEO of the site?</li>
                 <li>What a Web hosting is? How a Web hosting company provides?</li>
@@ -50,7 +53,8 @@
                 <li>How to manage you site from the Web hosting company's CPannel (vive la unification) and FTP.</li>
             </ol>
         </li>
-        <li><h3 title="Hide Subtopics" onclick="showHideNode(this.nextElementSibling);"><span class="label arrow_down">Introduction to Content Menagment Systems (CMS) ?</span><span class="hours">2</span></h3>
+        <li><h3 title="Hide Subtopics" onclick="showHideNode(this.nextElementSibling);"><a href="../themes/slides/slide.html" title="slides"><i class="fa fa-file-powerpoint-o"></i></a>
+            <span class="label arrow_down">Introduction to Content Menagment Systems (CMS) ?</span><span class="hours">2</span></h3>
             <ol class="iep_syllabus_sub_themes">
                 <li>What is a CMS? What about the Web Builder Software?</li>
                 <li>How Wordpress (or Joomla, Drupal, and etc.) creates your sites?</li>
@@ -58,7 +62,7 @@
                 <li>The Pros and Cons of creating a Web Site with CMS or Web Builder Tools.</li>
             </ol>
         </li>
-        <li><h3 title="Hide Subtopics" onclick="showHideNode(this.nextElementSibling);"><span class="label arrow_down">Sublime Text (ST3) - or how to be a sublime Web developer.</span><span class="hours">2</span></h3>
+        <li><h3 title="Hide Subtopics" onclick="showHideNode(this.nextElementSibling);"><a href="../themes/slides/sublime_text_introduction.html" title="slides"><i class="fa fa-file-powerpoint-o"></i></a><span class="label arrow_down">Sublime Text (ST3) - or how to be a sublime Web developer.</span><span class="hours">2</span></h3>
             <ol class="iep_syllabus_sub_themes">
                 <li>Install and understand the basic of ST3 folders structure.</li>
                 <li>Introduction to ST3 workspace.</li>
@@ -67,7 +71,7 @@
                 <li>The power of Command Palette.</li>
             </ol>
         </li>
-        <li><h3 title="Hide Subtopics" onclick="showHideNode(this.nextElementSibling);"><span class="label arrow_down">Sublime Text - improve and optimize your work-flow.</span><span class="hours">2</span></h3>
+        <li><h3 title="Hide Subtopics" onclick="showHideNode(this.nextElementSibling);"><a href="../themes/slides/sublime_text_workflow.html" title="slides"><i class="fa fa-file-powerpoint-o"></i></a><span class="label arrow_down">Sublime Text - improve and optimize your work-flow.</span><span class="hours">2</span></h3>
             <ol class="iep_syllabus_sub_themes">
                 <li>Every Web thing you do - you (should) do it with Projects.</li>
                 <li>Create a WWW Project structure with Sublime.</li>
@@ -75,14 +79,14 @@
                 <li>Be multi-and-fast-functional with multi-projects handling.</li>
             </ol>
         </li>
-        <li><h3 title="Hide Subtopics" onclick="showHideNode(this.nextElementSibling);"><span class="label arrow_down">Sublime Text - code like a pro and enjoy your live as Web Developer.</span><span class="hours">2</span></h3>
+        <li><h3 title="Hide Subtopics" onclick="showHideNode(this.nextElementSibling);"><a href="../themes/slides/sublime_text-code_like_a_pro.html" title="slides"><i class="fa fa-file-powerpoint-o"></i></a><span class="label arrow_down">Sublime Text - code like a pro and enjoy your live as Web Developer.</span><span class="hours">2</span></h3>
             <ol class="iep_syllabus_sub_themes">
                 <li>Write fast, edit fast - ST3 tips, tricks and keyboard short-cuts.</li>
                 <li>The power of multi-selections and other magic.</li>
                 <li>I want my Snippets, please!</li>
             </ol>
         </li>
-        <li><h3 onclick="showHideNode(this.nextElementSibling);"><span class="label arrow_down">You don't have to be a git in order to work with git's VCS</span><span class="hours">4</span></h3>
+        <li><h3 onclick="showHideNode(this.nextElementSibling);"><a href="../themes/slides/git_intro.html" title="slides"><i class="fa fa-file-powerpoint-o"></i></a><span class="label arrow_down">You don't have to be a git in order to work with git's VCS</span><span class="hours">4</span></h3>
             <ol class="iep_syllabus_sub_themes">
                 <li>What is VCS? What is git? Why git?</li>
                 <li>Installing and configuring git.</li>
@@ -93,7 +97,7 @@
                 <li>Working with branches.</li>
             </ol>
         </li>
-        <li><h3 onclick="showHideNode(this.nextElementSibling);"><span class="label arrow_down">A practical work-flow with git and GitHub</span><span class="hours">4</span></h3>
+        <li><h3 onclick="showHideNode(this.nextElementSibling);"><a href="../themes/slides/git_and_github_workflow.html" title="slides"><i class="fa fa-file-powerpoint-o"></i></a><span class="label arrow_down">A practical work-flow with git and GitHub</span><span class="hours">4</span></h3>
             <ol class="iep_syllabus_sub_themes">
                 <li>Overview of GitHub and setting-up a repository.</li>
                 <li>Connect your local repository to your GitHub repository.</li>
