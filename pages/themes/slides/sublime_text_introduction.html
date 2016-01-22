@@ -16,20 +16,64 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
+    <!-- custom -->
+    <link rel="stylesheet" href="reveal.js/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="reveal">
+        <a class="home_link" href="../../../index.html"><i class="fa fa-home"></i></a>
         <div class="slides">
 <!-- ~~~~~~~~~~~~~~~~~~~~~ SLIDES START ~~~~~~~~~~~~~~~~~~~~~ -->
 <!-- <section data-background="#dddddd"> -->
 <section>
     <h2>Sublime Text (ST3) - or how to be a sublime Web developer.</h2>
+</section>
+<section>
+    <section>
+        <h2>Download & install</h2>
+    </section>
+    <section>
+        <h3>Download</h3>
+        <p>Sublime text 2: <a href="https://www.sublimetext.com/2">Official page downloads</a></p>
+        <p>Sublime text 3: <a href="https://www.sublimetext.com/3">Official page downloads</a></p>
+        <h3>Install</h3>
+        <p><a href="http://docs.sublimetext.info/en/latest/getting_started/install.html">Installation instructions</a></p>
+    </section>
+    <section><h2>ST3 folders structure</h2></section>
+    <section>
+    <h3>The <b>DATA</b> Directory</h3>
+    <ul>
+        <li>Windows: %APPDATA%\Sublime Text 3</li>
+        <li>OS X: ~/Library/Application Support/Sublime Text 3</li>
+        <li>Linux: ~/.config/sublime-text-3</li>
+    </ul>
+    </section>
+    <section>
+        <h3>The <b>Packages</b> Directory</h3>
+        <ul>
+        <li>DATA/Packages</li>
+        <li>All resources for supported programming and markup languages are stored here.</li>
+        <li>Could be open directly from Sublime main menu [Preferences → Browse Packages...]</li>
+        </ul>
+    </section>
+    <section>
+        <h3>The <b>User</b> Directory</h3>
+        <ul>
+        <li>DATA/Packages/User</li>
+        <li>The place where you put your custom custom settings, plugins, snippets, macros, etc. </li>
+        <li>Updates to Sublime Text will never overwrite the contents of Packages/User.</li>
+        </ul>
+    </section>
+    <section>
+        <h3></h3>
+    </section>
 </section>
 <!-- ~~~~~~~~~~~~~~~~~~~~~ SLIDES End ~~~~~~~~~~~~~~~~~~~~~ -->
         </div>
@@ -50,12 +94,12 @@
             transition: 'concave', // none/fade/slide/convex/concave/zoom
             // Optional reveal.js plugins
             dependencies: [
-                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                { src: 'plugin/zoom-js/zoom.js', async: true },
-                { src: 'plugin/notes/notes.js', async: true }
+                { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+                { src: 'reveal.js/plugin/notes/notes.js', async: true }
             ]
         });
     </script>
