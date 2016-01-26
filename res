@@ -1,1 +1,0 @@
-/home/nemsys/projects/freelance/Courses/Front-end-Dev/individ/Milka/res/
